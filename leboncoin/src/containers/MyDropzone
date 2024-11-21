@@ -1,0 +1,40 @@
+// MyDropzone.js
+import React from 'react';
+import './MyDropzone.css';
+
+const MyDropzone = ({ setFormData }) => {
+  const handleDrop = (event) => {
+    event.preventDefault();
+    const files = event.dataTransfer.files;
+    setFormData((prevData) => ({
+      ...prevData,
+      images: [...prevData.images, ...Array.from(files)],
+    }));
+  };
+
+  const handleFileChange = (event) => {
+    const files = event.target.files;
+    setFormData((prevData) => ({
+      ...prevData,
+      images: [...prevData.images, ...Array.from(files)],
+    }));
+  };
+
+  return (
+    <div
+      className="dropzone"
+      onDrop={handleDrop}
+      onDragOver={(event) => event.preventDefault()}
+    >
+      <span>Glissez-déposez des fichiers ou cliquez pour sélectionner</span>
+      <input
+        type="file"
+        accept="image/*"
+        multiple
+        onChange={handleFileChange}
+      />
+    </div>
+  );
+};
+
+export default MyDropzone;

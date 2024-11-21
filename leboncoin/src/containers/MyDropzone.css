@@ -1,0 +1,21 @@
+/* MyDropzone.css */
+.dropzone {
+    border: 2px dashed #f77f00; /* Couleur inspirée de Leboncoin */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .dropzone input {
+    display: none;
+  }
+  
+  .dropzone span {
+    color: #f77f00;
+    font-weight: bold;
+  }
+  
+  .dropzone:hover {
+    background-color: #f7f7f7;
+  }
+  
