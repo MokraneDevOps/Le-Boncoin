@@ -1,0 +1,10 @@
+/* # # # # # # # #   OFFERS   # # # # # # # # # # # # # # # # #  */
+
+.offers {
+  padding: 150px 90px 50px 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 300px; */
+  overflow: scroll;
+}

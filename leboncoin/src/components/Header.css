@@ -1,0 +1,46 @@
+/* # # # # # # # #   HEADER   # # # # # # # # # # # # # # # # #  */
+
+.header {
+  /* position: fixed; */
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 4px 4px 10px #cdcccc;
+}
+
+.headerGhost {
+  /* background-color: red; */
+  height: 85px;
+  width: 100%;
+}
+
+/* + et Deposer une annonce */
+.orangeBox {
+  background-color: #f56b2a;
+  color: white;
+  padding: 6px;
+  margin: 0px 40px 0px 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* se connecter */
+.header > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+}
+.header > div:nth-child(3):hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.userPic {
+  height: 28px;
+}
